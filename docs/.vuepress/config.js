@@ -44,6 +44,10 @@ module.exports = {
           {
             text: 'CSS',
             link: '/css/'
+          },
+          {
+          	text: 'ES6',
+          	link: '/es6/'
           }
         ],
         sidebar: 'auto'
