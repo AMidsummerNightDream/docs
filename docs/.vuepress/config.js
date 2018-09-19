@@ -48,6 +48,10 @@ module.exports = {
           {
           	text: 'ES6',
           	link: '/es6/'
+          },
+          {
+          	text: 'React',
+          	link: '/react/'
           }
         ],
         sidebar: 'auto'
