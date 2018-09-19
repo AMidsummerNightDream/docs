@@ -42,8 +42,8 @@ module.exports = {
             link: '/webpack/'
           },
           {
-            text: '默认主题配置',
-            link: '/default-theme-config/'
+            text: 'CSS',
+            link: '/css/'
           }
         ],
         sidebar: 'auto'
