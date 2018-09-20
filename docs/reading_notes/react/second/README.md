@@ -1,0 +1,17 @@
+# Webpack
+功能强大，配置灵活，特有的code spliting方案，对大规模复杂应用十分有用。loader/plugin有丰富的配套工具与生态
+
+## 特点与优势
+### webpack，RequireJS， browserify
+RequireJS是一个JavaScript模块加载器，基于AMD规范实现。RequireJS从入口文件开始，递归地进行静态分析，找出所有直接或间接被依赖的模块，然后进行转换与合并
+
+browserify是一个以在浏览器中使用Node.js模块为出发点的工具，对CommonJS规范的模块代码进行转换与包装，对Node.js的标准package进行了浏览器适配
+
+webpack则是一个为前端模块打包构建而生的工具，吸收了已有方案的优点与教训，解决了前端开发过程中的痛点，代码拆分与一步加载，对非JavaScript资源的支持等
+### 模块规范
+AMD通过将模块的实现代码包在匿名函数中实现作用域的隔离，通过文件路径作为天然的模块ID实现命名空间的控制，将模块的工厂方法作为参数传入全局的define，使得工厂方法的执行时机可控，变相模拟出同步局部requre，AMD模块可以不经转换直接在浏览器中执行
+
+browserify支持符合CommonJS规范的JavaScript模块。CommonJS可以看成去掉了defne及工厂方法外壳的AMD
+define函数的作用，没有define函数的CommonJS模块无法直接在浏览器中执行。浏览器无法实现同Node.js环境一样同步的require方法。因为没有define与工厂方法，CommonJS模块书写起来要更简单，干净。
+
+组件化，将局部的逻辑进行封装，通过尽可能少的必要接口与其它组件进行组装与交互

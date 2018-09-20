@@ -22,7 +22,6 @@ module.exports = {
   // theme: 'vue',
   themeConfig: {
     // repo: 'docschina/vuepress',
-    search: false,
     searchMaxSuggestions: 10,
     editLinks: true,
     docsDir: 'docs',
