@@ -1,5 +1,6 @@
 # ES2015
 
+## [Babel](/es6/babel/)
 ## Promise
 
 ``` js
